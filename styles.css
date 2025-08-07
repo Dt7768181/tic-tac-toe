@@ -1,66 +1,68 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f8f8f8;
+  padding: 40px;
+}
 
-    body {
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 40px;
-    }
+h1 {
+  margin-bottom: 20px;
+}
 
-    h1 {
-      margin-bottom: 20px;
-    }
+.scoreboard {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 
-    .scoreboard {
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
+.color-select {
+  margin-bottom: 20px;
+}
 
-    .board {
-      display: grid;
-      grid-template-columns: repeat(3, 80px);
-      gap: 10px;
-      margin-bottom: 20px;
-    }
+.color-select input {
+  margin: 0 10px;
+}
 
-    .board button {
-      width: 80px;
-      height: 80px;
-      font-size: 28px;
-      border: none;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      cursor: pointer;
-      transition: background 0.2s;
-    }
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
-    .board button:hover {
-      background-color: #e0e0e0;
-    }
+.board button {
+  width: 80px;
+  height: 80px;
+  font-size: 28px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background 0.2s;
+}
 
-    .status {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
+.status {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
 
-    .controls {
-      display: flex;
-      gap: 10px;
-    }
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
-    .controls button {
-      padding: 8px 16px;
-      font-size: 16px;
-      border: none;
-      background-color: #007bff;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+.controls button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-    .controls button:hover {
-      background-color: #0056b3;
-    }
+.controls button:hover {
+  background-color: #0056b3;
+}
