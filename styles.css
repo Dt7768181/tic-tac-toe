@@ -2,38 +2,43 @@ body {
   font-family: sans-serif;
   text-align: center;
   background: #f8f8f8;
-  padding: 40px;
+  padding: 20px;
 }
 
 h1 {
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
 .scoreboard {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-size: 18px;
 }
 
 .color-select {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  font-size: 16px;
 }
 
 .color-select input {
-  margin: 0 10px;
+  margin: 0 5px;
+  width: 40px;
+  height: 30px;
+  padding: 0;
 }
 
 .board {
   display: grid;
-  grid-template-columns: repeat(3, 80px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  justify-content: center;
-  margin-bottom: 20px;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
 }
 
 .board button {
-  width: 80px;
-  height: 80px;
-  font-size: 28px;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes square buttons */
+  font-size: 32px;
   border: none;
   border-radius: 10px;
   background-color: white;
@@ -43,26 +48,45 @@ h1 {
 }
 
 .status {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 
 .controls {
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .controls button {
-  padding: 8px 16px;
+  padding: 10px 16px;
   font-size: 16px;
   border: none;
   background-color: #007bff;
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  min-width: 120px;
 }
 
 .controls button:hover {
   background-color: #0056b3;
+}
+
+/* Responsive adjustments for very small devices */
+@media (max-width: 400px) {
+  .board {
+    max-width: 240px;
+  }
+
+  .controls button {
+    font-size: 14px;
+    min-width: 100px;
+    padding: 8px;
+  }
+
+  .status {
+    font-size: 16px;
+  }
 }
